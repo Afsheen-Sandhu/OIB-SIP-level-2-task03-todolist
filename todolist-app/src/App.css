@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #6C63FF, #C06C84); /* Elegant gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #f3f4f6; /* Light grey for better contrast on gradient background */
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: rgba(255, 255, 255, 0.1); /* Translucent white background for a sleek look */
+  backdrop-filter: blur(10px); /* Blur effect for modern glassmorphism style */
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 15px; /* Increased border radius for a smoother appearance */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Softer shadow */
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: rgba(255, 255, 255, 0.2); /* Light, semi-transparent input background */
+  border: 1px solid #FFFFFF; /* White border for a clean look */
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #fff;
+  border-radius: 10px; /* Rounded input field */
+}
+
+.todo-input::placeholder {
+  color: #ffffffcc; /* Softer placeholder color */
+}
+
+.todo-btn {
+  background: linear-gradient(135deg, #C06C84, #6C63FF); /* Gradient button background */
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 10px; /* Matching with input field */
+  transition: background-color 0.3s ease;
+}
+
+.todo-btn:hover {
+  background: linear-gradient(135deg, #6C63FF, #C06C84); /* Invert gradient on hover */
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent todo background */
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Light shadow for subtle depth */
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.date-time {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.date-time-text {
+  color: #f3f4f6; /* Light grey for contrast */
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+  color: #f3f4f6; /* Matching icon color with text */
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+.completed {
+  color: #f3f4f6; /* Softer color for completed tasks */
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  color: #f3f4f6; /* Matching icon color */
+}
+.priority-select {
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #FFFFFF;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1em;
+}
+.priority-high {
+  color: #ff4c4c; /* Red for high priority */
+}
+
+.priority-medium {
+  color: #ffb74c; /* Orange for medium priority */
+}
+
+.priority-low {
+  color: #4caf50; /* Green for low priority */
+}
